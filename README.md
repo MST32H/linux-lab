@@ -1,55 +1,69 @@
 # 🐧 Linux Lab
 
-> Hands-on Linux Administration & DevOps Lab
+<div align="center">
 
-A practical Linux administration repository built from real-world experience.
+![Linux](https://img.shields.io/badge/Linux-Ubuntu-E95420?style=for-the-badge&logo=ubuntu)
+![Bash](https://img.shields.io/badge/Bash-Scripting-121011?style=for-the-badge&logo=gnubash)
+![GitHub](https://img.shields.io/badge/GitHub-MHZ-black?style=for-the-badge&logo=github)
+![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
+
+Hands-on Linux Administration Lab
+
+**Learn • Build • Share**
+
+</div>
 
 ---
 
-## 📚 Topics
+# 📖 About
 
-- Linux Installation
-- Users & Groups
-- File Permissions
-- Package Management
-- Services
-- Networking
+This repository documents my hands-on Linux Administration journey through practical labs, real-world commands, troubleshooting scenarios, and best practices.
+
+---
+
+# 📚 Contents
+
+| Lab | Status |
+|------|--------|
+| Ubuntu Installation | ✅ |
+| Users & Groups | ✅ |
+| File Permissions | ✅ |
+| Package Management | ✅ |
+| Systemd | ✅ |
+| Networking | ✅ |
+| SSH | ✅ |
+| Storage | ✅ |
+| Logs | ✅ |
+| Troubleshooting | ✅ |
+
+---
+
+# 🎯 Goal
+
+Build a professional Linux Administration knowledge base suitable for DevOps and System Administration roles.
+
+---
+
+# 🛠 Technologies
+
+- Ubuntu Server
+- Bash
 - SSH
+- Systemd
+- Networking
 - Storage
-- Logs
-- Troubleshooting
+- Linux Logs
 
 ---
 
-## 📂 Repository Structure
+# 👨‍💻 Author
 
-```
-linux-lab
-│
-├── 01-installation
-├── 02-users-and-groups
-├── 03-permissions
-├── 04-package-management
-├── 05-systemd
-├── 06-networking
-├── 07-ssh
-├── 08-storage
-├── 09-logs
-└── 10-troubleshooting
-```
-
----
-
-## 🎯 Goal
-
-Build a complete Linux Administration Lab with practical examples.
-
----
-
-## 👨‍💻 Author
-
-Mohammad H. Zandi
+**Mohammad H. Zandi**
 
 Linux • DevOps • Cloud
 
-Learn. Build. Share.
+---
+
+# ⭐ Support
+
+If you like this project, don't forget to star it.
