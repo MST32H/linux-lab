@@ -1,28 +1,43 @@
-
 # Ubuntu Server Installation
 
-## Objective
+## Overview
 
-Install Ubuntu Server and prepare it for Linux administration.
-
----
-
-## Requirements
-
-- Ubuntu Server 24.04 LTS
-- VMware Workstation
-- 2 CPU
-- 4 GB RAM
-- 30 GB Disk
+This lab demonstrates the installation and initial configuration of Ubuntu Server.
 
 ---
 
-## Commands
+## Environment
+
+| Item | Value |
+|------|------|
+| OS | Ubuntu Server 24.04 LTS |
+| Hypervisor | VMware Workstation |
+| CPU | 2 vCPU |
+| RAM | 4 GB |
+| Disk | 30 GB |
+
+---
+
+## Update System
 
 ```bash
 sudo apt update
 sudo apt upgrade -y
+```
+
+---
+
+## Check Hostname
+
+```bash
 hostnamectl
+```
+
+---
+
+## Check Network
+
+```bash
 ip a
 ```
 
@@ -30,14 +45,16 @@ ip a
 
 ## Verification
 
-```bash
-hostnamectl
-ip a
-lsb_release -a
-```
+- Ubuntu installed successfully
+- Network configured
+- Internet access confirmed
 
 ---
 
-## Result
+## Screenshots
 
-Ubuntu Server installed successfully.
+![Login](images/login-screen.png)
+
+![Hostname](images/hostnamectl.png)
+
+![IP Address](images/ip-a.png)
