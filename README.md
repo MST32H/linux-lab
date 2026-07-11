@@ -1,6 +1,6 @@
 # 🐧 Linux Lab
 
-> Hands-on Linux Administration Lab
+> Hands-on Linux Administration & DevOps Lab
 
 A practical Linux administration repository built from real-world experience.
 
