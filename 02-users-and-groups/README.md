@@ -1,67 +1,142 @@
-# Ubuntu Server Installation
+# Users & Groups Management
 
-## Objective
+## Overview
 
-Install Ubuntu Server and prepare it for system administration tasks.
-
----
-
-## Requirements
-
-- Ubuntu Server ISO (24.04 LTS)
-- VMware Workstation / VirtualBox
-- 2 CPU
-- 4 GB RAM
-- 30 GB Disk
+This lab covers Linux user and group management using practical commands.
 
 ---
 
-## Installation Steps
+## Objectives
 
-1. Download Ubuntu Server ISO.
-2. Create a new virtual machine.
-3. Boot from the ISO.
-4. Install Ubuntu Server.
-5. Create an administrator account.
-6. Update the system.
+- Create users
+- Modify users
+- Delete users
+- Create groups
+- Add users to groups
+- Change passwords
+- Check user information
 
 ---
 
-## Commands
+# Create User
 
 ```bash
-sudo apt update
-sudo apt upgrade -y
-hostnamectl
-ip a
+sudo adduser ali
 ```
 
 ---
 
-## Verification
+# Delete User
 
 ```bash
-lsb_release -a
-hostnamectl
-ip a
+sudo deluser ali
+```
+
+Delete user with home directory
+
+```bash
+sudo deluser --remove-home ali
 ```
 
 ---
 
-## Screenshot
+# Create Group
 
-> Add installation screenshots here.
-
----
-
-## Interview Questions
-
-- Why Ubuntu Server?
-- Difference between Server and Desktop editions?
-- Why update the system after installation?
+```bash
+sudo groupadd developers
+```
 
 ---
 
-## Result
+# Add User to Group
 
-Ubuntu Server installed successfully and ready for administration.
+```bash
+sudo usermod -aG developers ali
+```
+
+---
+
+# Show User Groups
+
+```bash
+groups ali
+```
+
+or
+
+```bash
+id ali
+```
+
+---
+
+# Change Password
+
+```bash
+sudo passwd ali
+```
+
+---
+
+# Lock User
+
+```bash
+sudo passwd -l ali
+```
+
+---
+
+# Unlock User
+
+```bash
+sudo passwd -u ali
+```
+
+---
+
+# Current Logged-in Users
+
+```bash
+who
+```
+
+---
+
+# Current User
+
+```bash
+whoami
+```
+
+---
+
+# Verification
+
+```bash
+id ali
+groups ali
+```
+
+---
+
+# Interview Questions
+
+### Difference between adduser and useradd?
+
+### Difference between groupadd and usermod?
+
+### What does `-aG` mean?
+
+### Difference between `/etc/passwd` and `/etc/shadow`?
+
+---
+
+# Best Practice
+
+Always use groups instead of assigning permissions directly to individual users.
+
+---
+
+# Result
+
+User and group management completed successfully.
